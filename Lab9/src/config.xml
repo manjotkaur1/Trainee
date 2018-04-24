@@ -1,0 +1,23 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-4.2.xsd">
+
+
+	<bean id="aobj" class="com.cvl.spring.Lab9.A">
+	<property name = "a" value ="500"/>
+	<property name="msg" value ="hellllo"/>
+	</bean>
+	
+	<bean id = "bobj1" class ="com.cvl.spring.Lab9.B">
+	<constructor-arg value= "7000"></constructor-arg>
+    <constructor-arg value ="hiiiiiiiiiii"> </constructor-arg>
+	</bean>
+	
+     <bean id="hello" class="com.cvl.spring.Lab9.Hello" autowire="byName"/>
+     
+
+
+</beans> 
